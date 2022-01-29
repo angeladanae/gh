@@ -7,12 +7,12 @@
      <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css%22%3E
 
-     <title>Pagina</title>
+     <title>Document</title>
     </head>
     <body>
 
       <nav>
-        <div class="nav-wrapper container">
+        <div class="nav-wrapper">
           <a href="#" class="brand-logo">Logo</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
@@ -28,28 +28,27 @@
 
       <div class="container">
 
-        <table>
-          <thead>
+      <table>
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Career</th>
+        </tr>
+        </thead>
+        <tbody>
+          <template id="tbodytempl">
             <tr>
-              <th>#</th>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Career</th>
+              <td><span name="tbodynumber"></span></td>
+              <td><span name="tbodyname"></span></td>
+              <td><span name="tbodyage"></span></td>
+              <td><span name="tbodycareer"></span></td>
             </tr>
-          </thead>
-          <tbody>
-            <template id="tbodytempl">
-              <tr>
-                <td><span name="tbodynumber"></span></td>
-                <td><span name="tbodyname"></span></td>
-                <td><span name="tbodyage"></span></td>
-                <td><span name="tbodycareer"></span></td>
-              </tr>
-            </template>
-          </tbody>
-        </table>
-      </div>
-
+          </template>
+        </tbody>
+      </table>
+    </div>
 
 
       <!-- Compiled and minified JavaScript -->
